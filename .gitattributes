@@ -1,0 +1,9 @@
+# Normalize all text to LF in the working tree on every platform, so the
+# deterministic build and its SHA-256 reproduce identically — Windows included.
+* text=auto eol=lf
+
+# The frozen artifact and its checksum are byte-exact contracts. Never let any
+# platform's line-ending conversion touch them, or the hash check would fail on
+# a fresh clone.
+artifact/argument_graph.v1.json -text
+artifact/SHA256SUMS -text

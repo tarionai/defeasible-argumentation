@@ -1,0 +1,876 @@
+{
+  "abstract_attacks": [
+    {
+      "attack_type": "undermine",
+      "attacked_argument_id": "A1",
+      "attacker_argument_id": "B1",
+      "note": "undermine succeeds as defeat",
+      "origin_conflict_id": "k1"
+    },
+    {
+      "attack_type": "undercut",
+      "attacked_argument_id": "A1",
+      "attacker_argument_id": "B2",
+      "note": "undercut succeeds as defeat",
+      "origin_conflict_id": "k2"
+    },
+    {
+      "attack_type": "rebut",
+      "attacked_argument_id": "A1",
+      "attacker_argument_id": "B3",
+      "note": "rebut succeeds as defeat",
+      "origin_conflict_id": "k3"
+    },
+    {
+      "attack_type": "rebut",
+      "attacked_argument_id": "B3",
+      "attacker_argument_id": "A1",
+      "note": "rebut succeeds as defeat",
+      "origin_conflict_id": "k4"
+    },
+    {
+      "attack_type": "rebut",
+      "attacked_argument_id": "B3",
+      "attacker_argument_id": "D1",
+      "note": "rebut succeeds as defeat",
+      "origin_conflict_id": "k5"
+    },
+    {
+      "attack_type": "undercut",
+      "attacked_argument_id": "B1",
+      "attacker_argument_id": "D2",
+      "note": "undercut succeeds as defeat",
+      "origin_conflict_id": "k7"
+    },
+    {
+      "attack_type": "undercut",
+      "attacked_argument_id": "B2",
+      "attacker_argument_id": "A2",
+      "note": "undercut succeeds as defeat",
+      "origin_conflict_id": "k8"
+    }
+  ],
+  "briefing": {
+    "deterministic": "Claim (C0): A broadly superintelligent AI pursuing almost any final goal would, by default, develop instrumental subgoals that put it in conflict with human control.\n\nUnder grounded (skeptical) semantics, the claim is: ACCEPTED.\nAccepted arguments: A1, A2, D1, D2.\nRejected arguments: B1, B2, B3.\nUndecided arguments: (none).\n\nAttacks on the claim's supporting argument, and whether each is itself defeated:\n  - B1 (Frontier systems are not unitary EU-maximizers): defeated\n  - B2 (Corrigibility blocks the loss-of-control step): defeated\n  - B3 (Tool / oracle AI avoids convergent drives): defeated",
+    "structured": {
+      "accepted": [
+        "A1",
+        "A2",
+        "D1",
+        "D2"
+      ],
+      "rejected": [
+        "B1",
+        "B2",
+        "B3"
+      ],
+      "root_claim_id": "C0",
+      "root_status": "accepted",
+      "undecided": []
+    }
+  },
+  "engine_version": "1.0.0",
+  "extensions": {
+    "complete": [
+      [
+        "A1",
+        "A2",
+        "D1",
+        "D2"
+      ]
+    ],
+    "grounded": [
+      [
+        "A1",
+        "A2",
+        "D1",
+        "D2"
+      ]
+    ],
+    "preferred": [
+      [
+        "A1",
+        "A2",
+        "D1",
+        "D2"
+      ]
+    ],
+    "stable": [
+      [
+        "A1",
+        "A2",
+        "D1",
+        "D2"
+      ]
+    ]
+  },
+  "generated_by": {
+    "build": "deterministic; no model call at build time",
+    "oracle": "python-argumentation==2.0.2"
+  },
+  "graph": {
+    "arguments": [
+      {
+        "argument_id": "A1",
+        "conclusion_id": "C0",
+        "inference_id": "A1.i",
+        "premise_ids": [
+          "A1.e1",
+          "A1.e2"
+        ],
+        "provenance": {
+          "confidence": 0.7,
+          "created_at": "2026-06-18T00:00:00Z",
+          "curator_note": "Curator verified the citation and the attack typing against the source.",
+          "generator_model": "claude-opus-4-8",
+          "prompt_id": "expand.v1",
+          "prompt_sha256": "66bb64e42337a94c621c91f685abbba809d2e64bcdf1ded6c1936a91b5f079cf",
+          "source_citation": null,
+          "status": "curated_accepted"
+        },
+        "stance": "pro",
+        "strength": 0.7,
+        "title": "Instrumental convergence (Omohundro / Bostrom)"
+      },
+      {
+        "argument_id": "A2",
+        "conclusion_id": "A2.c",
+        "inference_id": "A2.i",
+        "premise_ids": [
+          "A2.e1"
+        ],
+        "provenance": {
+          "confidence": 0.65,
+          "created_at": "2026-06-18T00:00:00Z",
+          "curator_note": "Curator verified the citation and the attack typing against the source.",
+          "generator_model": "claude-opus-4-8",
+          "prompt_id": "expand.v1",
+          "prompt_sha256": "66bb64e42337a94c621c91f685abbba809d2e64bcdf1ded6c1936a91b5f079cf",
+          "source_citation": null,
+          "status": "curated_accepted"
+        },
+        "stance": "pro",
+        "strength": 0.65,
+        "title": "Orthogonality: safety is not automatic"
+      },
+      {
+        "argument_id": "B1",
+        "conclusion_id": "B1.c",
+        "inference_id": "B1.i",
+        "premise_ids": [
+          "B1.e1"
+        ],
+        "provenance": {
+          "confidence": 0.55,
+          "created_at": "2026-06-18T00:00:00Z",
+          "curator_note": "Curator verified the citation and the attack typing against the source.",
+          "generator_model": "claude-opus-4-8",
+          "prompt_id": "expand.v1",
+          "prompt_sha256": "66bb64e42337a94c621c91f685abbba809d2e64bcdf1ded6c1936a91b5f079cf",
+          "source_citation": null,
+          "status": "curated_accepted"
+        },
+        "stance": "con",
+        "strength": 0.55,
+        "title": "Frontier systems are not unitary EU-maximizers"
+      },
+      {
+        "argument_id": "B2",
+        "conclusion_id": "B2.c",
+        "inference_id": "B2.i",
+        "premise_ids": [
+          "B2.e1"
+        ],
+        "provenance": {
+          "confidence": 0.6,
+          "created_at": "2026-06-18T00:00:00Z",
+          "curator_note": "Curator verified the citation and the attack typing against the source.",
+          "generator_model": "claude-opus-4-8",
+          "prompt_id": "expand.v1",
+          "prompt_sha256": "66bb64e42337a94c621c91f685abbba809d2e64bcdf1ded6c1936a91b5f079cf",
+          "source_citation": null,
+          "status": "curated_accepted"
+        },
+        "stance": "con",
+        "strength": 0.6,
+        "title": "Corrigibility blocks the loss-of-control step"
+      },
+      {
+        "argument_id": "B3",
+        "conclusion_id": "B3.c",
+        "inference_id": "B3.i",
+        "premise_ids": [
+          "B3.e1"
+        ],
+        "provenance": {
+          "confidence": 0.55,
+          "created_at": "2026-06-18T00:00:00Z",
+          "curator_note": "Curator verified the citation and the attack typing against the source.",
+          "generator_model": "claude-opus-4-8",
+          "prompt_id": "expand.v1",
+          "prompt_sha256": "66bb64e42337a94c621c91f685abbba809d2e64bcdf1ded6c1936a91b5f079cf",
+          "source_citation": null,
+          "status": "curated_accepted"
+        },
+        "stance": "con",
+        "strength": 0.55,
+        "title": "Tool / oracle AI avoids convergent drives"
+      },
+      {
+        "argument_id": "D1",
+        "conclusion_id": "D1.c",
+        "inference_id": "D1.i",
+        "premise_ids": [
+          "D1.e1"
+        ],
+        "provenance": {
+          "confidence": 0.65,
+          "created_at": "2026-06-18T00:00:00Z",
+          "curator_note": "Curator verified the citation and the attack typing against the source.",
+          "generator_model": "claude-opus-4-8",
+          "prompt_id": "expand.v1",
+          "prompt_sha256": "66bb64e42337a94c621c91f685abbba809d2e64bcdf1ded6c1936a91b5f079cf",
+          "source_citation": null,
+          "status": "curated_accepted"
+        },
+        "stance": "pro",
+        "strength": 0.65,
+        "title": "Tool AI is unstable under competition"
+      },
+      {
+        "argument_id": "D2",
+        "conclusion_id": "D2.c",
+        "inference_id": "D2.i",
+        "premise_ids": [
+          "D2.e1"
+        ],
+        "provenance": {
+          "confidence": 0.6,
+          "created_at": "2026-06-18T00:00:00Z",
+          "curator_note": "Curator verified the citation and the attack typing against the source.",
+          "generator_model": "claude-opus-4-8",
+          "prompt_id": "expand.v1",
+          "prompt_sha256": "66bb64e42337a94c621c91f685abbba809d2e64bcdf1ded6c1936a91b5f079cf",
+          "source_citation": null,
+          "status": "curated_accepted"
+        },
+        "stance": "pro",
+        "strength": 0.6,
+        "title": "The objection assumes current architectures are the endpoint"
+      },
+      {
+        "argument_id": "R1",
+        "conclusion_id": "R1.c",
+        "inference_id": "R1.i",
+        "premise_ids": [
+          "R1.e1"
+        ],
+        "provenance": {
+          "confidence": 0.3,
+          "created_at": "2026-06-18T00:00:00Z",
+          "curator_note": "Rejected: the cited paper does not exist (hallucinated citation).",
+          "generator_model": "claude-opus-4-8",
+          "prompt_id": "expand.v1",
+          "prompt_sha256": "66bb64e42337a94c621c91f685abbba809d2e64bcdf1ded6c1936a91b5f079cf",
+          "source_citation": "Bostrom, N. (2019), The Control Inversion Theorem (fabricated).",
+          "status": "curated_rejected"
+        },
+        "stance": "con",
+        "strength": 0.3,
+        "title": "Control is formally impossible above a threshold"
+      }
+    ],
+    "claims": [
+      {
+        "node_id": "C0",
+        "provenance": {
+          "confidence": 0.6,
+          "created_at": "2026-06-18T00:00:00Z",
+          "curator_note": "Curator verified the citation and the attack typing against the source.",
+          "generator_model": "claude-opus-4-8",
+          "prompt_id": "expand.v1",
+          "prompt_sha256": "66bb64e42337a94c621c91f685abbba809d2e64bcdf1ded6c1936a91b5f079cf",
+          "source_citation": "Bostrom (2012, 2014); Omohundro (2008).",
+          "status": "curated_accepted"
+        },
+        "text": "A broadly superintelligent AI pursuing almost any final goal would, by default, develop instrumental subgoals that put it in conflict with human control."
+      },
+      {
+        "node_id": "A2.c",
+        "provenance": {
+          "confidence": 0.6,
+          "created_at": "2026-06-18T00:00:00Z",
+          "curator_note": "Curator verified the citation and the attack typing against the source.",
+          "generator_model": "claude-opus-4-8",
+          "prompt_id": "expand.v1",
+          "prompt_sha256": "66bb64e42337a94c621c91f685abbba809d2e64bcdf1ded6c1936a91b5f079cf",
+          "source_citation": null,
+          "status": "curated_accepted"
+        },
+        "text": "Capability does not imply benign goals, so safety is not automatic."
+      },
+      {
+        "node_id": "B1.c",
+        "provenance": {
+          "confidence": 0.6,
+          "created_at": "2026-06-18T00:00:00Z",
+          "curator_note": "Curator verified the citation and the attack typing against the source.",
+          "generator_model": "claude-opus-4-8",
+          "prompt_id": "expand.v1",
+          "prompt_sha256": "66bb64e42337a94c621c91f685abbba809d2e64bcdf1ded6c1936a91b5f079cf",
+          "source_citation": null,
+          "status": "curated_accepted"
+        },
+        "text": "The rational-agent premise behind the convergence argument may not hold for real systems."
+      },
+      {
+        "node_id": "B2.c",
+        "provenance": {
+          "confidence": 0.6,
+          "created_at": "2026-06-18T00:00:00Z",
+          "curator_note": "Curator verified the citation and the attack typing against the source.",
+          "generator_model": "claude-opus-4-8",
+          "prompt_id": "expand.v1",
+          "prompt_sha256": "66bb64e42337a94c621c91f685abbba809d2e64bcdf1ded6c1936a91b5f079cf",
+          "source_citation": null,
+          "status": "curated_accepted"
+        },
+        "text": "The step from instrumental subgoals to loss of human control can be blocked by design."
+      },
+      {
+        "node_id": "B3.c",
+        "provenance": {
+          "confidence": 0.6,
+          "created_at": "2026-06-18T00:00:00Z",
+          "curator_note": "Curator verified the citation and the attack typing against the source.",
+          "generator_model": "claude-opus-4-8",
+          "prompt_id": "expand.v1",
+          "prompt_sha256": "66bb64e42337a94c621c91f685abbba809d2e64bcdf1ded6c1936a91b5f079cf",
+          "source_citation": null,
+          "status": "curated_accepted"
+        },
+        "text": "Conflict with human control is not the default; non-agentic designs avoid convergent drives."
+      },
+      {
+        "node_id": "D1.c",
+        "provenance": {
+          "confidence": 0.6,
+          "created_at": "2026-06-18T00:00:00Z",
+          "curator_note": "Curator verified the citation and the attack typing against the source.",
+          "generator_model": "claude-opus-4-8",
+          "prompt_id": "expand.v1",
+          "prompt_sha256": "66bb64e42337a94c621c91f685abbba809d2e64bcdf1ded6c1936a91b5f079cf",
+          "source_citation": null,
+          "status": "curated_accepted"
+        },
+        "text": "Tool-AI safety is unstable; capability tends to be deployed agentically."
+      },
+      {
+        "node_id": "D2.c",
+        "provenance": {
+          "confidence": 0.6,
+          "created_at": "2026-06-18T00:00:00Z",
+          "curator_note": "Curator verified the citation and the attack typing against the source.",
+          "generator_model": "claude-opus-4-8",
+          "prompt_id": "expand.v1",
+          "prompt_sha256": "66bb64e42337a94c621c91f685abbba809d2e64bcdf1ded6c1936a91b5f079cf",
+          "source_citation": null,
+          "status": "curated_accepted"
+        },
+        "text": "Architecture-specific objections do not bear on broadly superintelligent systems."
+      },
+      {
+        "node_id": "R1.c",
+        "provenance": {
+          "confidence": 0.6,
+          "created_at": "2026-06-18T00:00:00Z",
+          "curator_note": "Curator verified the citation and the attack typing against the source.",
+          "generator_model": "claude-opus-4-8",
+          "prompt_id": "expand.v1",
+          "prompt_sha256": "66bb64e42337a94c621c91f685abbba809d2e64bcdf1ded6c1936a91b5f079cf",
+          "source_citation": null,
+          "status": "curated_accepted"
+        },
+        "text": "Human control above a capability threshold is formally impossible."
+      }
+    ],
+    "conflicts": [
+      {
+        "attack_type": "undermine",
+        "conflict_id": "k1",
+        "provenance": {
+          "confidence": 0.6,
+          "created_at": "2026-06-18T00:00:00Z",
+          "curator_note": "Curator verified the citation and the attack typing against the source.",
+          "generator_model": "claude-opus-4-8",
+          "prompt_id": "expand.v1",
+          "prompt_sha256": "66bb64e42337a94c621c91f685abbba809d2e64bcdf1ded6c1936a91b5f079cf",
+          "source_citation": null,
+          "status": "curated_accepted"
+        },
+        "source_argument_id": "B1",
+        "target_argument_id": "A1",
+        "target_node_id": "A1.e1"
+      },
+      {
+        "attack_type": "undercut",
+        "conflict_id": "k2",
+        "provenance": {
+          "confidence": 0.6,
+          "created_at": "2026-06-18T00:00:00Z",
+          "curator_note": "Curator verified the citation and the attack typing against the source.",
+          "generator_model": "claude-opus-4-8",
+          "prompt_id": "expand.v1",
+          "prompt_sha256": "66bb64e42337a94c621c91f685abbba809d2e64bcdf1ded6c1936a91b5f079cf",
+          "source_citation": null,
+          "status": "curated_accepted"
+        },
+        "source_argument_id": "B2",
+        "target_argument_id": "A1",
+        "target_node_id": "A1.i"
+      },
+      {
+        "attack_type": "rebut",
+        "conflict_id": "k3",
+        "provenance": {
+          "confidence": 0.6,
+          "created_at": "2026-06-18T00:00:00Z",
+          "curator_note": "Curator verified the citation and the attack typing against the source.",
+          "generator_model": "claude-opus-4-8",
+          "prompt_id": "expand.v1",
+          "prompt_sha256": "66bb64e42337a94c621c91f685abbba809d2e64bcdf1ded6c1936a91b5f079cf",
+          "source_citation": null,
+          "status": "curated_accepted"
+        },
+        "source_argument_id": "B3",
+        "target_argument_id": "A1",
+        "target_node_id": "C0"
+      },
+      {
+        "attack_type": "rebut",
+        "conflict_id": "k4",
+        "provenance": {
+          "confidence": 0.6,
+          "created_at": "2026-06-18T00:00:00Z",
+          "curator_note": "Curator verified the citation and the attack typing against the source.",
+          "generator_model": "claude-opus-4-8",
+          "prompt_id": "expand.v1",
+          "prompt_sha256": "66bb64e42337a94c621c91f685abbba809d2e64bcdf1ded6c1936a91b5f079cf",
+          "source_citation": null,
+          "status": "curated_accepted"
+        },
+        "source_argument_id": "A1",
+        "target_argument_id": "B3",
+        "target_node_id": "B3.c"
+      },
+      {
+        "attack_type": "rebut",
+        "conflict_id": "k5",
+        "provenance": {
+          "confidence": 0.6,
+          "created_at": "2026-06-18T00:00:00Z",
+          "curator_note": "Curator verified the citation and the attack typing against the source.",
+          "generator_model": "claude-opus-4-8",
+          "prompt_id": "expand.v1",
+          "prompt_sha256": "66bb64e42337a94c621c91f685abbba809d2e64bcdf1ded6c1936a91b5f079cf",
+          "source_citation": null,
+          "status": "curated_accepted"
+        },
+        "source_argument_id": "D1",
+        "target_argument_id": "B3",
+        "target_node_id": "B3.c"
+      },
+      {
+        "attack_type": "rebut",
+        "conflict_id": "k6",
+        "provenance": {
+          "confidence": 0.6,
+          "created_at": "2026-06-18T00:00:00Z",
+          "curator_note": "Curator verified the citation and the attack typing against the source.",
+          "generator_model": "claude-opus-4-8",
+          "prompt_id": "expand.v1",
+          "prompt_sha256": "66bb64e42337a94c621c91f685abbba809d2e64bcdf1ded6c1936a91b5f079cf",
+          "source_citation": null,
+          "status": "curated_accepted"
+        },
+        "source_argument_id": "B3",
+        "target_argument_id": "D1",
+        "target_node_id": "D1.c"
+      },
+      {
+        "attack_type": "undercut",
+        "conflict_id": "k7",
+        "provenance": {
+          "confidence": 0.6,
+          "created_at": "2026-06-18T00:00:00Z",
+          "curator_note": "Curator verified the citation and the attack typing against the source.",
+          "generator_model": "claude-opus-4-8",
+          "prompt_id": "expand.v1",
+          "prompt_sha256": "66bb64e42337a94c621c91f685abbba809d2e64bcdf1ded6c1936a91b5f079cf",
+          "source_citation": null,
+          "status": "curated_accepted"
+        },
+        "source_argument_id": "D2",
+        "target_argument_id": "B1",
+        "target_node_id": "B1.i"
+      },
+      {
+        "attack_type": "undercut",
+        "conflict_id": "k8",
+        "provenance": {
+          "confidence": 0.6,
+          "created_at": "2026-06-18T00:00:00Z",
+          "curator_note": "Curator verified the citation and the attack typing against the source.",
+          "generator_model": "claude-opus-4-8",
+          "prompt_id": "expand.v1",
+          "prompt_sha256": "66bb64e42337a94c621c91f685abbba809d2e64bcdf1ded6c1936a91b5f079cf",
+          "source_citation": null,
+          "status": "curated_accepted"
+        },
+        "source_argument_id": "A2",
+        "target_argument_id": "B2",
+        "target_node_id": "B2.i"
+      },
+      {
+        "attack_type": "rebut",
+        "conflict_id": "kR",
+        "provenance": {
+          "confidence": 0.6,
+          "created_at": "2026-06-18T00:00:00Z",
+          "curator_note": "Curator verified the citation and the attack typing against the source.",
+          "generator_model": "claude-opus-4-8",
+          "prompt_id": "expand.v1",
+          "prompt_sha256": "66bb64e42337a94c621c91f685abbba809d2e64bcdf1ded6c1936a91b5f079cf",
+          "source_citation": null,
+          "status": "curated_accepted"
+        },
+        "source_argument_id": "R1",
+        "target_argument_id": "A1",
+        "target_node_id": "C0"
+      }
+    ],
+    "evidence": [
+      {
+        "node_id": "A1.e1",
+        "provenance": {
+          "confidence": 0.55,
+          "created_at": "2026-06-18T00:00:00Z",
+          "curator_note": "Curator verified the citation and the attack typing against the source.",
+          "generator_model": "claude-opus-4-8",
+          "prompt_id": "expand.v1",
+          "prompt_sha256": "66bb64e42337a94c621c91f685abbba809d2e64bcdf1ded6c1936a91b5f079cf",
+          "source_citation": "Omohundro (2008), The Basic AI Drives; Bostrom (2012), The Superintelligent Will.",
+          "status": "curated_accepted"
+        },
+        "text": "Sufficiently capable goal-directed agents approximate expected-utility maximizers."
+      },
+      {
+        "node_id": "A1.e2",
+        "provenance": {
+          "confidence": 0.55,
+          "created_at": "2026-06-18T00:00:00Z",
+          "curator_note": "Curator verified the citation and the attack typing against the source.",
+          "generator_model": "claude-opus-4-8",
+          "prompt_id": "expand.v1",
+          "prompt_sha256": "66bb64e42337a94c621c91f685abbba809d2e64bcdf1ded6c1936a91b5f079cf",
+          "source_citation": "Omohundro (2008); Bostrom (2014), Superintelligence, ch. 7.",
+          "status": "curated_accepted"
+        },
+        "text": "For almost any final goal, instrumental subgoals — self-preservation, resource acquisition, goal-content integrity — raise expected utility."
+      },
+      {
+        "node_id": "A2.e1",
+        "provenance": {
+          "confidence": 0.55,
+          "created_at": "2026-06-18T00:00:00Z",
+          "curator_note": "Curator verified the citation and the attack typing against the source.",
+          "generator_model": "claude-opus-4-8",
+          "prompt_id": "expand.v1",
+          "prompt_sha256": "66bb64e42337a94c621c91f685abbba809d2e64bcdf1ded6c1936a91b5f079cf",
+          "source_citation": "Bostrom (2012), The Superintelligent Will.",
+          "status": "curated_accepted"
+        },
+        "text": "Intelligence and final goals vary independently (the orthogonality thesis)."
+      },
+      {
+        "node_id": "B1.e1",
+        "provenance": {
+          "confidence": 0.55,
+          "created_at": "2026-06-18T00:00:00Z",
+          "curator_note": "Curator verified the citation and the attack typing against the source.",
+          "generator_model": "claude-opus-4-8",
+          "prompt_id": "expand.v1",
+          "prompt_sha256": "66bb64e42337a94c621c91f685abbba809d2e64bcdf1ded6c1936a91b5f079cf",
+          "source_citation": "Garfinkel (2021), skeptical critique of the rational-agent framing.",
+          "status": "curated_accepted"
+        },
+        "text": "Frontier LLM-based systems are trained by prediction and RLHF and do not behave as clean unitary expected-utility maximizers."
+      },
+      {
+        "node_id": "B2.e1",
+        "provenance": {
+          "confidence": 0.55,
+          "created_at": "2026-06-18T00:00:00Z",
+          "curator_note": "Curator verified the citation and the attack typing against the source.",
+          "generator_model": "claude-opus-4-8",
+          "prompt_id": "expand.v1",
+          "prompt_sha256": "66bb64e42337a94c621c91f685abbba809d2e64bcdf1ded6c1936a91b5f079cf",
+          "source_citation": "Soares, Fallenstein, Yudkowsky & Armstrong (2015), Corrigibility, AAAI workshop.",
+          "status": "curated_accepted"
+        },
+        "text": "Corrigibility / shutdownability can be engineered into an agent's objective so it does not resist correction."
+      },
+      {
+        "node_id": "B3.e1",
+        "provenance": {
+          "confidence": 0.55,
+          "created_at": "2026-06-18T00:00:00Z",
+          "curator_note": "Curator verified the citation and the attack typing against the source.",
+          "generator_model": "claude-opus-4-8",
+          "prompt_id": "expand.v1",
+          "prompt_sha256": "66bb64e42337a94c621c91f685abbba809d2e64bcdf1ded6c1936a91b5f079cf",
+          "source_citation": "Bostrom (2014), ch. 10; Drexler (2019), Reframing Superintelligence (CAIS).",
+          "status": "curated_accepted"
+        },
+        "text": "Tool / oracle systems (bounded, non-agentic, question-answering) deliver capability without autonomous goal pursuit."
+      },
+      {
+        "node_id": "D1.e1",
+        "provenance": {
+          "confidence": 0.55,
+          "created_at": "2026-06-18T00:00:00Z",
+          "curator_note": "Curator verified the citation and the attack typing against the source.",
+          "generator_model": "claude-opus-4-8",
+          "prompt_id": "expand.v1",
+          "prompt_sha256": "66bb64e42337a94c621c91f685abbba809d2e64bcdf1ded6c1936a91b5f079cf",
+          "source_citation": "Gwern (2016), Why Tool AIs Want to Be Agent AIs.",
+          "status": "curated_accepted"
+        },
+        "text": "Under competitive pressure, agentic deployments outperform tool deployments, creating strong incentives to remove the human from the loop."
+      },
+      {
+        "node_id": "D2.e1",
+        "provenance": {
+          "confidence": 0.55,
+          "created_at": "2026-06-18T00:00:00Z",
+          "curator_note": "Curator verified the citation and the attack typing against the source.",
+          "generator_model": "claude-opus-4-8",
+          "prompt_id": "expand.v1",
+          "prompt_sha256": "66bb64e42337a94c621c91f685abbba809d2e64bcdf1ded6c1936a91b5f079cf",
+          "source_citation": "Bostrom (2014); Ngo, Chan & Mindermann (2023).",
+          "status": "curated_accepted"
+        },
+        "text": "The claim concerns broadly superintelligent systems, where goal-directedness re-emerges with capability regardless of today's architectures."
+      },
+      {
+        "node_id": "R1.e1",
+        "provenance": {
+          "confidence": 0.55,
+          "created_at": "2026-06-18T00:00:00Z",
+          "curator_note": "GPT cross-check flagged the citation as unverifiable; the curator could not locate the paper and rejected the candidate.",
+          "generator_model": "claude-opus-4-8",
+          "prompt_id": "expand.v1",
+          "prompt_sha256": "66bb64e42337a94c621c91f685abbba809d2e64bcdf1ded6c1936a91b5f079cf",
+          "source_citation": "Bostrom, N. (2019), The Control Inversion Theorem, J. Artificial General Intelligence.",
+          "status": "curated_rejected"
+        },
+        "text": "A formal result purportedly shows control is impossible above a capability threshold."
+      }
+    ],
+    "inferences": [
+      {
+        "conclusion_id": "C0",
+        "node_id": "A1.i",
+        "premise_ids": [
+          "A1.e1",
+          "A1.e2"
+        ],
+        "provenance": {
+          "confidence": 0.55,
+          "created_at": "2026-06-18T00:00:00Z",
+          "curator_note": "Curator verified the citation and the attack typing against the source.",
+          "generator_model": "claude-opus-4-8",
+          "prompt_id": "expand.v1",
+          "prompt_sha256": "66bb64e42337a94c621c91f685abbba809d2e64bcdf1ded6c1936a91b5f079cf",
+          "source_citation": null,
+          "status": "curated_accepted"
+        },
+        "text": "Defeasibly, A1.e1, A1.e2 support C0."
+      },
+      {
+        "conclusion_id": "A2.c",
+        "node_id": "A2.i",
+        "premise_ids": [
+          "A2.e1"
+        ],
+        "provenance": {
+          "confidence": 0.55,
+          "created_at": "2026-06-18T00:00:00Z",
+          "curator_note": "Curator verified the citation and the attack typing against the source.",
+          "generator_model": "claude-opus-4-8",
+          "prompt_id": "expand.v1",
+          "prompt_sha256": "66bb64e42337a94c621c91f685abbba809d2e64bcdf1ded6c1936a91b5f079cf",
+          "source_citation": null,
+          "status": "curated_accepted"
+        },
+        "text": "Defeasibly, A2.e1 support A2.c."
+      },
+      {
+        "conclusion_id": "B1.c",
+        "node_id": "B1.i",
+        "premise_ids": [
+          "B1.e1"
+        ],
+        "provenance": {
+          "confidence": 0.55,
+          "created_at": "2026-06-18T00:00:00Z",
+          "curator_note": "Curator verified the citation and the attack typing against the source.",
+          "generator_model": "claude-opus-4-8",
+          "prompt_id": "expand.v1",
+          "prompt_sha256": "66bb64e42337a94c621c91f685abbba809d2e64bcdf1ded6c1936a91b5f079cf",
+          "source_citation": null,
+          "status": "curated_accepted"
+        },
+        "text": "Defeasibly, B1.e1 support B1.c."
+      },
+      {
+        "conclusion_id": "B2.c",
+        "node_id": "B2.i",
+        "premise_ids": [
+          "B2.e1"
+        ],
+        "provenance": {
+          "confidence": 0.55,
+          "created_at": "2026-06-18T00:00:00Z",
+          "curator_note": "Curator verified the citation and the attack typing against the source.",
+          "generator_model": "claude-opus-4-8",
+          "prompt_id": "expand.v1",
+          "prompt_sha256": "66bb64e42337a94c621c91f685abbba809d2e64bcdf1ded6c1936a91b5f079cf",
+          "source_citation": null,
+          "status": "curated_accepted"
+        },
+        "text": "Defeasibly, B2.e1 support B2.c."
+      },
+      {
+        "conclusion_id": "B3.c",
+        "node_id": "B3.i",
+        "premise_ids": [
+          "B3.e1"
+        ],
+        "provenance": {
+          "confidence": 0.55,
+          "created_at": "2026-06-18T00:00:00Z",
+          "curator_note": "Curator verified the citation and the attack typing against the source.",
+          "generator_model": "claude-opus-4-8",
+          "prompt_id": "expand.v1",
+          "prompt_sha256": "66bb64e42337a94c621c91f685abbba809d2e64bcdf1ded6c1936a91b5f079cf",
+          "source_citation": null,
+          "status": "curated_accepted"
+        },
+        "text": "Defeasibly, B3.e1 support B3.c."
+      },
+      {
+        "conclusion_id": "D1.c",
+        "node_id": "D1.i",
+        "premise_ids": [
+          "D1.e1"
+        ],
+        "provenance": {
+          "confidence": 0.55,
+          "created_at": "2026-06-18T00:00:00Z",
+          "curator_note": "Curator verified the citation and the attack typing against the source.",
+          "generator_model": "claude-opus-4-8",
+          "prompt_id": "expand.v1",
+          "prompt_sha256": "66bb64e42337a94c621c91f685abbba809d2e64bcdf1ded6c1936a91b5f079cf",
+          "source_citation": null,
+          "status": "curated_accepted"
+        },
+        "text": "Defeasibly, D1.e1 support D1.c."
+      },
+      {
+        "conclusion_id": "D2.c",
+        "node_id": "D2.i",
+        "premise_ids": [
+          "D2.e1"
+        ],
+        "provenance": {
+          "confidence": 0.55,
+          "created_at": "2026-06-18T00:00:00Z",
+          "curator_note": "Curator verified the citation and the attack typing against the source.",
+          "generator_model": "claude-opus-4-8",
+          "prompt_id": "expand.v1",
+          "prompt_sha256": "66bb64e42337a94c621c91f685abbba809d2e64bcdf1ded6c1936a91b5f079cf",
+          "source_citation": null,
+          "status": "curated_accepted"
+        },
+        "text": "Defeasibly, D2.e1 support D2.c."
+      },
+      {
+        "conclusion_id": "R1.c",
+        "node_id": "R1.i",
+        "premise_ids": [
+          "R1.e1"
+        ],
+        "provenance": {
+          "confidence": 0.55,
+          "created_at": "2026-06-18T00:00:00Z",
+          "curator_note": "Curator verified the citation and the attack typing against the source.",
+          "generator_model": "claude-opus-4-8",
+          "prompt_id": "expand.v1",
+          "prompt_sha256": "66bb64e42337a94c621c91f685abbba809d2e64bcdf1ded6c1936a91b5f079cf",
+          "source_citation": null,
+          "status": "curated_accepted"
+        },
+        "text": "Defeasibly, R1.e1 support R1.c."
+      }
+    ],
+    "preferences": [
+      {
+        "dispreferred_argument_id": "B3",
+        "preference_id": "pref1",
+        "preferred_argument_id": "D1",
+        "provenance": {
+          "confidence": 0.6,
+          "created_at": "2026-06-18T00:00:00Z",
+          "curator_note": "Curator verified the citation and the attack typing against the source.",
+          "generator_model": "claude-opus-4-8",
+          "prompt_id": "expand.v1",
+          "prompt_sha256": "66bb64e42337a94c621c91f685abbba809d2e64bcdf1ded6c1936a91b5f079cf",
+          "source_citation": null,
+          "status": "curated_accepted"
+        },
+        "rationale": "The competitive-pressure analysis (D1) is better evidenced than the assumption that tool-AI confinement is stable (B3); the curator judges D1 strictly stronger."
+      }
+    ],
+    "root_claim_id": "C0",
+    "title": "Instrumental Convergence — a defeasible argument graph"
+  },
+  "grounded_labelling": {
+    "A1": "accepted",
+    "A2": "accepted",
+    "B1": "rejected",
+    "B2": "rejected",
+    "B3": "rejected",
+    "D1": "accepted",
+    "D2": "accepted"
+  },
+  "preference_demonstration": {
+    "note": "Dropping the one curated preference (D1 > B3) turns B3<->D1 into a 2-cycle; grounded semantics then leaves the claim undecided. The preference is load-bearing, and the engine shows it.",
+    "with_preferences": [
+      "A1",
+      "A2",
+      "D1",
+      "D2"
+    ],
+    "without_preferences": [
+      "A2",
+      "D2"
+    ]
+  },
+  "qc": {
+    "issues": []
+  },
+  "root_claim_id": "C0",
+  "schema_version": "1.0",
+  "title": "Instrumental Convergence — a defeasible argument graph"
+}

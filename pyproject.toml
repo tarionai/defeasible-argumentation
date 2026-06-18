@@ -1,0 +1,37 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "argkit"
+version = "1.0.0"
+description = "A verified miniature of a defeasible-argumentation pipeline: Dung semantics differential-tested against a published library, a thin ASPIC+-flavored structured layer, an LLM population pipeline behind a QC/provenance/HITL scaffold, and a deterministic frozen artifact."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "Ed Sosa" }]
+dependencies = [
+    "pydantic>=2.6",
+]
+
+[project.optional-dependencies]
+# The oracle for differential testing and the CI deploy guard. Dev/test only:
+# the shipped engine is hand-rolled; PyArg is the independent cross-check.
+dev = [
+    "pytest>=8.0",
+    "python-argumentation==2.0.2",
+]
+# LLM population pipeline. Optional: the committed artifact is built
+# deterministically from the curated seed and never calls a model, so the
+# build/test path does not require these SDKs or any API key.
+llm = [
+    "anthropic>=0.40",
+    "openai>=1.40",
+]
+
+[tool.setuptools]
+packages = ["argkit"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+filterwarnings = ["ignore::DeprecationWarning"]

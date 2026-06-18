@@ -1,0 +1,25 @@
+# Python
+.venv/
+.venv_clean/
+__pycache__/
+*.pyc
+*.egg-info/
+.pytest_cache/
+build/
+dist/
+
+# Node / web
+web/node_modules/
+web/dist/
+web/.vite/
+web/public/argument_graph.v1.json
+*.tsbuildinfo
+
+# Local env / secrets — never commit keys
+.env
+.env.local
+*.key
+
+# OS
+.DS_Store
+Thumbs.db

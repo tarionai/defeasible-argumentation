@@ -1,0 +1,6 @@
+node_modules/
+dist/
+.vite/
+
+# Generated at prebuild from ../artifact (single source of truth)
+public/argument_graph.v1.json
