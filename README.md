@@ -1,5 +1,9 @@
 # Defeasible Argument Graphs — a verified miniature
 
+[![tests](https://github.com/tarionai/defeasible-argumentation/actions/workflows/tests.yml/badge.svg)](https://github.com/tarionai/defeasible-argumentation/actions/workflows/tests.yml)
+
+**Live demo:** [tarion-argue.netlify.app](https://tarion-argue.netlify.app)
+
 A small, honest, end-to-end model of the machinery an evidentiary-argumentation
 system needs: a **typed knowledge graph** of claims/evidence/inferences, a
 **thin ASPIC+-flavored structured layer** that turns typed attacks into defeats,
