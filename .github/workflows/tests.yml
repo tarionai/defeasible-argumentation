@@ -20,5 +20,5 @@ jobs:
       - name: Verify the frozen artifact is byte-reproducible across platforms
         run: |
           python -m argkit.build
-          sha256sum -c artifact/SHA256SUMS
+          (cd artifact && sha256sum -c SHA256SUMS)
           git diff --exit-code -- artifact/

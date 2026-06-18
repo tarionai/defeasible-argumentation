@@ -103,7 +103,7 @@ python -m venv .venv && . .venv/Scripts/activate      # or .venv/bin/activate
 pip install -e ".[dev]"
 pytest                                                # textbook canon + 1000-AF differential + deploy guard
 python -m argkit.build                                # regenerates artifact/argument_graph.v1.json
-sha256sum -c artifact/SHA256SUMS                       # hash matches -> byte-reproducible
+(cd artifact && sha256sum -c SHA256SUMS)               # hash matches -> byte-reproducible
 ```
 
 The build calls **no model** — the LLM population happened once, offline, and
