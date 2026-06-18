@@ -4,10 +4,9 @@ interface FooterProps {
   artifact: ArgumentGraphArtifact;
 }
 
-const REPO_URL =
-  "https://github.com/tarionai/memlearn-retrieval-evidence/tree/main/defeasible-argumentation";
+const REPO_URL = "https://github.com/tarionai/defeasible-argumentation";
 const ENGINE_CLAIM_URL =
-  "https://github.com/tarionai/memlearn-retrieval-evidence/blob/main/defeasible-argumentation/tests/test_aaf_differential.py";
+  "https://github.com/tarionai/defeasible-argumentation/blob/main/tests/test_aaf_differential.py";
 
 export function Footer({ artifact }: FooterProps) {
   const oracle = artifact.generated_by["oracle"] ?? "unknown";
