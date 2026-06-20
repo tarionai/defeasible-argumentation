@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="assets/social-card.png" alt="Defeasible Argument Graphs — argument semantics, made provable" width="100%">
+</p>
+
 # Defeasible Argument Graphs — a verified miniature
 
 [![tests](https://github.com/tarionai/defeasible-argumentation/actions/workflows/tests.yml/badge.svg)](https://github.com/tarionai/defeasible-argumentation/actions/workflows/tests.yml)
