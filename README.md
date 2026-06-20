@@ -2,7 +2,7 @@
 
 [![tests](https://github.com/tarionai/defeasible-argumentation/actions/workflows/tests.yml/badge.svg)](https://github.com/tarionai/defeasible-argumentation/actions/workflows/tests.yml)
 
-**Live demo:** [tarion-argue.netlify.app](https://tarion-argue.netlify.app) · **Write-up:** [Defeasible Argument Graphs, Made Provable](https://www.tarion.ai/blog/verified-defeasible-argumentation) on [tarion.ai](https://www.tarion.ai)
+**Live demo:** [argue.tarion.ai](https://argue.tarion.ai) · **Write-up:** [Defeasible Argument Graphs, Made Provable](https://www.tarion.ai/blog/verified-defeasible-argumentation) on [tarion.ai](https://www.tarion.ai)
 
 A small, honest, end-to-end model of the machinery an evidentiary-argumentation
 system needs: a **typed knowledge graph** of claims/evidence/inferences, a
